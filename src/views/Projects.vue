@@ -1,10 +1,15 @@
 <template>
-  <h1>Projects</h1>
+  <div class="main-container">
+    <ProjectCard />
+    <ProjectCard />
+    <ProjectCard />
+  </div>
 </template>
 
 <script>
+import ProjectCard from "../components/ProjectCard.vue"
 export default {
-
+components: { ProjectCard }
 }
 </script>
 
