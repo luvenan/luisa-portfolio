@@ -7,17 +7,17 @@
       <div class="profile-container">
         <h1>Luisa Venancio</h1>
         <h2>Front-end Developer</h2>
-        <p class="profile-description"> Stack: JavaScript, HTML, CSS, Vue.Js; </p>
-        <p class="profile-description"> Software: Figma, Adobe Suite (InDesign, Illustrator, Photoshop), ; </p>
+        <p class="profile-description"> Stack: JavaScript, HTML, CSS, Vue.Js, Firebase; </p>
+        <p class="profile-description"> Software: Figma, Adobe Suite (InDesign, Illustrator, Photoshop); </p>
+        <p class="profile-description"> Drafting and 3d modeling: AutoCAD, Sketchup, TinkerCAD, UltimateCura; </p>
         <p class="profile-description"> Languages: English, French, Brazilian Portuguese (native); </p>
       </div>
   </div>
 
   <div id="projects" class="main-container">
 
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard color="dark-card"/>
+      <ProjectCard color="light-card"/>
 
   </div>
 
