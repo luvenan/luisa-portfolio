@@ -4,26 +4,20 @@
             "title": "Get-it-done App",
             "subtitle": "To Do Web App in Vue.Js",
             "descripton": "lorem ipsum",
-            "image-main": "./src/assets/images/getit/getit-fullscreen2.png",
-            "image-mobile-1": "./src/assets/images/getit/getit-mob1.png",
-            "image-mobile-2": "./src/assets/images/getit/getit-mob1.png",
-            "image-mobile-3": "./src/assets/images/getit/getit-mob1.png",
+            "image": "./src/assets/images/getit/getit-fullscreen2.png",
             "tags": ["HTML", "CSS", "Vue.Js", "Firebase", "Vue-Router"],
-            "github-url": "url",
-            "live-url": "url",
+            "githubUrl": "https://github.com/luvenan/get-it-done",
+            "liveUrl": "https://get-it-done-fb970.web.app/",
             "id": 1
         },
         {
             "title": "HYH Diet Check",
             "subtitle": "Web App in Vanilla JavaScript",
             "descripton": "lorem ipsum",
-            "image-main": "./src/assets/images/getit/getit-fullscreen2.png",
-            "image-mobile-1": "./src/assets/images/getit/getit-mob1.png",
-            "image-mobile-2": "./src/assets/images/getit/getit-mob1.png",
-            "image-mobile-3": "./src/assets/images/getit/getit-mob1.png",
+            "image": "./src/assets/images/hyhcheck-main.png",
             "tags": ["HTML", "CSS", "Vanilla JavaScript"],
-            "github-url": "url",
-            "live-url": "url",
+            "githubUrl": "https://github.com/luvenan/hyhcheck",
+            "liveUrl": "https://luvenan.github.io/hyhcheck/",
             "id": 2
         }
     ]

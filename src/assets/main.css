@@ -266,7 +266,7 @@ h3 {
     }
 
     .mobile-images-container {
-        display: flex;
+        
         justify-content: space-between;
         margin: 7.5%;
     }
