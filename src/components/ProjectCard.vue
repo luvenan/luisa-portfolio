@@ -2,9 +2,9 @@
 <div class="project-card" v-bind:class="color">
     <div class="grid-container" >
         <div class="project-images-container" v-bind:class="color">
-            <img class="project-main-image" src="../assets/getit/getit-fullscreen2.png" alt="">
-            <img class="project-main-image" src="../assets/hyhcheck-main.png" alt="">
-            <img class="project-main-image" v-bind:src="image" alt="">
+            <a :href="liveUrl">
+                <img class="project-main-image" v-bind:src="imagePath" :alt="imageAlt">
+            </a>
 
         </div>
     
@@ -13,17 +13,11 @@
             <h3>{{subtitle}}</h3>
             <p class="project-description">{{description}}</p>
             <ul class="tags-container" v-bind:class="color" >
-                <li class="tag" v-bind:class="color">#HTML</li>
-                <li class="tag" v-bind:class="color">#CSS</li>
-                <li class="tag" v-bind:class="color">#Vue.Js</li>
-                <li class="tag" v-bind:class="color">#Firebase</li>
+                <div class="tags" v-for="tag in tags"> 
+                    <li class="tag" v-bind:class="color">#{{tag}}</li>
+                </div>
             </ul>
-            <ul class="tags-container" v-bind:class="color" v-for="tag in tags">
-                <li class="tag" v-bind:class="color">#{{tag}}</li>
-            </ul>
-            <div class="links-container" v-bind:class="color">
-                <button class="proj-links" v-bind:class="color">GitHub</button>
-                <button class="proj-links" v-bind:class="color">Deployed</button>    
+            <div class="links-container" v-bind:class="color">   
                 <a :href="githubUrl" class="proj-links" v-bind:class="color">GitHub</a>
                 <a :href="liveUrl" class="proj-links" v-bind:class="color">Live Website</a>
             </div>
@@ -35,8 +29,16 @@
 
 <script>
 export default {
-    props: ['color', 'projectName', 'subtitle', 'description', 'image', 'tags', 'githubUrl', 'liveUrl', 'id'],
+    props: ['color', 'projectName', 'subtitle', 'description', 'imageName', 'tags', 'githubUrl', 'liveUrl', 'id'],
+
+    data() {
+        return {
+            imageAlt: "Screenshot of " + this.projectName,
+            imagePath: require("../assets/images/" + this.imageName),
+        }
+    }
 }
+    
 </script>
 
 <style>
