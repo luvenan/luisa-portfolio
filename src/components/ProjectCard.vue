@@ -2,7 +2,7 @@
 <div class="project-card" v-bind:class="color">
     <div class="grid-container" >
         <div class="project-images-container" v-bind:class="color">
-            <a :href="liveUrl">
+            <a :href="liveUrl" target="_blank">
                 <img class="project-main-image" v-bind:src="imagePath" :alt="imageAlt">
             </a>
 
@@ -18,8 +18,8 @@
                 </div>
             </ul>
             <div class="links-container" v-bind:class="color">   
-                <a :href="githubUrl" class="proj-links" v-bind:class="color">GitHub</a>
-                <a :href="liveUrl" class="proj-links" v-bind:class="color">Live Website</a>
+                <a :href="githubUrl" class="proj-links" v-bind:class="color" target="_blank">GitHub</a>
+                <a :href="liveUrl" class="proj-links" v-bind:class="color" target="_blank">Live Website</a>
             </div>
         </div>
     </div>
