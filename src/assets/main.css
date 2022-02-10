@@ -84,17 +84,11 @@ h2 {
 
 /*4 - Projects*/
 
-.project-images-container {
-
-
-}
-
 .project-main-image {
     width: 90%;
     margin: auto;
     display: block;
     border-radius: 0.3rem; 
-    box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
     margin-bottom: 2rem;
 }
 
@@ -109,7 +103,6 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
-
 }
 
 .tag {
@@ -151,7 +144,6 @@ h3 {
 .mobile-images-container {
     display: none;
 }
-
 
 .project-card {
     padding: 5rem 0;
@@ -243,8 +235,6 @@ h3 {
         box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
         border-radius: 0.3rem; 
     }
-    
-
 }
 
 @media screen and (min-width: 1025px) {
@@ -260,7 +250,6 @@ h3 {
     .project-description {
         line-height: 2rem;
     }
-
 }
 
 
@@ -268,7 +257,6 @@ h3 {
 
 #contact {
     background-color: var(--dark-background);
-
     padding: 4rem 0;
 }
 
@@ -285,8 +273,7 @@ h3 {
 .social-media-container {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    
+    margin-top: 2rem; 
 }
 
 .social-media-icons {
