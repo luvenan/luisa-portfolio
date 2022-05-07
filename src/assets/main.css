@@ -3,11 +3,11 @@
 
 /* 1 - variables*/
 :root {
-    --light-background: #F6F5EF;
-    --dark-background: #3A340A;
+    --light-background: #f3f3f2;
+    --dark-background: #24221d;
     --tags: #706F66;
     --buttons: #b8b59c;
-    --dark-text: #3e3b26;
+    --dark-text: #232221;
     --light-text: #fffffd;
 }
 
@@ -256,13 +256,13 @@ h3 {
 /*5 - Contact*/
 
 #contact {
-    background-color: var(--dark-background);
+    background-color: var(--light-background);
     padding: 4rem 0;
 }
 
 .contact-info{
     text-align: center;
-    color: var(--light-text);
+    color: var(--dark-text);
     margin: auto;
     font-weight: normal;
     text-decoration: none;

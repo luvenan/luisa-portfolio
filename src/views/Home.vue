@@ -27,10 +27,17 @@
   <div id="contact">
       <a href="mailto:luisa.carvalho.venancio@gmail.com" class="contact-info">luisa.carvalho.venancio@gmail.com</a>
     
-      <div class="social-media-container">
+      <!-- with light colors -->
+      <!-- <div class="social-media-container">
         <a href="https://github.com/luvenan" target="_blank"><Icon class="social-media-icons" icon="akar-icons:github-fill" style="color: #fffffd" /></a>
         <a href="https://www.linkedin.com/in/luisa-venancio-5b110088/" target="_blank"><Icon class="social-media-icons" icon="akar-icons:linkedin-fill" style="color: #fffffd"/></a>
         <a href="https://twitter.com/LuisaVenancio" target="_blank"><Icon class="social-media-icons" icon="akar-icons:twitter-fill" style="color: #fffffd" /></a>
+      </div> -->
+      <!-- with dark colors -->
+      <div class="social-media-container">
+        <a href="https://github.com/luvenan" target="_blank"><Icon class="social-media-icons" icon="akar-icons:github-fill" style="color: #232221" /></a>
+        <a href="https://www.linkedin.com/in/luisa-venancio-5b110088/" target="_blank"><Icon class="social-media-icons" icon="akar-icons:linkedin-fill" style="color: #232221"/></a>
+        <a href="https://twitter.com/LuisaVenancio" target="_blank"><Icon class="social-media-icons" icon="akar-icons:twitter-fill" style="color: #232221" /></a>
       </div>
   </div>
 </template>
@@ -47,11 +54,21 @@ export default {
   setup() {
     const projects = [
       {
+            title: "Reading Nook",
+            subtitle: "SPA in Vue.Js",
+            description: "I wrote this to solidify my knowledge of Vue.Js and keep track of my favorite book series. I use the google books API to take the book covers from the series and display them. I'm planning to add more functionality in the future.",
+            imageName: "reading-nook.png",
+            tags: ["Vue.Js", "Google Books API", "HTML", "CSS"],
+            githubUrl: "https://github.com/luvenan/reading-nook",
+            liveUrl: "https://luvenan.github.io/reading-nook/",
+            id: 0
+        },
+      {
             title: "Get-it-done App",
             subtitle: "To Do Web App in Vue.Js",
             description: "I wrote this project in Vue.Js and Firebase 9, at the request of family members who wanted a simple to-do app with a \"standby\" category. I used Firebase Auth for registering, login, and making sure to show only your own tasks. Tasks can be added to either the \"to do\" or \"standby\" categories, moved from one category to another, or checked off as done. They can also be edited in place, in any of the categories. The \"done\" items can be \"undone\" and are sent back to their original category.",
             imageName: "get-it-done.png",
-            tags: ["HTML", "CSS", "Vue.Js", "Firebase", "Vue-Router"],
+            tags: ["Vue.Js", "Firebase", "Vue-Router", "HTML", "CSS"],
             githubUrl: "https://github.com/luvenan/get-it-done",
             liveUrl: "https://get-it-done-fb970.web.app/",
             id: 1
@@ -66,6 +83,7 @@ export default {
             liveUrl: "https://luvenan.github.io/hyhcheck/",
             id: 2
         }
+        
     ]
 
     const determineColor = (index) => {

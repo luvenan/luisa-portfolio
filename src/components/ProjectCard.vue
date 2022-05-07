@@ -13,7 +13,7 @@
             <h3>{{subtitle}}</h3>
             <p class="project-description">{{description}}</p>
             <ul class="tags-container" v-bind:class="color" >
-                <div class="tags" v-for="tag in tags"> 
+                <div class="tags" v-for="(tag, index) in tags" :key="index"> 
                     <li class="tag" v-bind:class="color">#{{tag}}</li>
                 </div>
             </ul>
