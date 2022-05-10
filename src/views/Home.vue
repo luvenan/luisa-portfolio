@@ -56,7 +56,7 @@ export default {
       {
             title: "Reading Nook",
             subtitle: "SPA in Vue.Js",
-            description: "I wrote this to solidify my knowledge of Vue.Js and keep track of my favorite book series. I use the google books API to take the book covers from the series and display them. I'm planning to add more functionality in the future.",
+            description: "A Web App built with Vue.Js using the Google Books API, where I can find a new book series to read. The left column works as a filter by author, genre, etc. and contains a Search Box. I am currently working on this project and adding more features as I go. ",
             imageName: "reading-nook.png",
             tags: ["Vue.Js", "Google Books API", "HTML", "CSS"],
             githubUrl: "https://github.com/luvenan/reading-nook",
