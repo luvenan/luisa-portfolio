@@ -58,7 +58,7 @@ export default {
             subtitle: "SPA in Vue.Js",
             description: "A Web App built with Vue.Js using the Google Books API, where I can find a new book series to read. The backend is with Express.js and MongoDB. The left contains a search boxes and filters by author, genre, and number of books.  New series can be added and removed. I am currently working on this project and adding more features as I go. ",
             imageName: "reading-nook.png",
-            tags: ["Vue.Js", "Google Books API", "HTML", "CSS", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Heroku"],
+            tags: ["Vue.Js", "Google Books API", "HTML", "CSS", "ExpressJS", "MongoDB", "NodeJS", "Heroku"],
             githubUrl: "https://github.com/luvenan/reading-nook",
             githubUrl2: "https://github.com/luvenan/reading-nook-fullstack",
             liveUrl: "https://reading-nook.herokuapp.com/",
