@@ -17,7 +17,7 @@
   <div id="projects" class="main-container">
  
     <div class="cards-loop" v-for="(project, index) in projects" :key="project.id">
-        <ProjectCard :projectName="project.title" :subtitle="project.subtitle" :description="project.description" :imageName="project.imageName" :githubUrl="project.githubUrl" :liveUrl="project.liveUrl" :tags="project.tags" :id="project.id" :color="determineColor(index)" />
+        <ProjectCard :projectName="project.title" :subtitle="project.subtitle" :description="project.description" :imageName="project.imageName" :githubUrl="project.githubUrl" :githubUrl2="project.githubUrl2"  :liveUrl="project.liveUrl" :tags="project.tags" :id="project.id" :color="determineColor(index)" />
     </div>
 
   </div>
@@ -56,11 +56,12 @@ export default {
       {
             title: "Reading Nook",
             subtitle: "SPA in Vue.Js",
-            description: "A Web App built with Vue.Js using the Google Books API, where I can find a new book series to read. The left column works as a filter by author, genre, etc. and contains a Search Box. I am currently working on this project and adding more features as I go. ",
+            description: "A Web App built with Vue.Js using the Google Books API, where I can find a new book series to read. The backend is with Express.js and MongoDB. The left contains a search boxes and filters by author, genre, and number of books.  New series can be added and removed. I am currently working on this project and adding more features as I go. ",
             imageName: "reading-nook.png",
-            tags: ["Vue.Js", "Google Books API", "HTML", "CSS"],
+            tags: ["Vue.Js", "Google Books API", "HTML", "CSS", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Heroku"],
             githubUrl: "https://github.com/luvenan/reading-nook",
-            liveUrl: "https://luvenan.github.io/reading-nook/",
+            githubUrl2: "https://github.com/luvenan/reading-nook-fullstack",
+            liveUrl: "https://reading-nook.herokuapp.com/",
             id: 0
         },
       {

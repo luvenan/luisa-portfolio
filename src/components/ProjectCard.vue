@@ -17,8 +17,13 @@
                     <li class="tag" v-bind:class="color">#{{tag}}</li>
                 </div>
             </ul>
-            <div class="links-container" v-bind:class="color">   
+            <div v-if="!githubUrl2" class="links-container" v-bind:class="color">   
                 <a :href="githubUrl" class="proj-links" v-bind:class="color" target="_blank">GitHub</a>
+                <a :href="liveUrl" class="proj-links" v-bind:class="color" target="_blank">Live Website</a>
+            </div>
+            <div v-if="githubUrl2" class="links-container" v-bind:class="color">   
+                <a :href="githubUrl" class="proj-links" v-bind:class="color" target="_blank">GitHub - Frontend</a>
+                <a :href="githubUrl2" class="proj-links" v-bind:class="color" target="_blank">GitHub - Backend</a>
                 <a :href="liveUrl" class="proj-links" v-bind:class="color" target="_blank">Live Website</a>
             </div>
         </div>
@@ -29,7 +34,7 @@
 
 <script>
 export default {
-    props: ['color', 'projectName', 'subtitle', 'description', 'imageName', 'tags', 'githubUrl', 'liveUrl', 'id'],
+    props: ['color', 'projectName', 'subtitle', 'description', 'imageName', 'tags', 'githubUrl', 'githubUrl2', 'liveUrl', 'id'],
 
     data() {
         return {
